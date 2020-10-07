@@ -1,0 +1,29 @@
+// Tablets & Smaller
+@media (max-width: 800px) {
+  body {
+    overflow: auto;
+    line-height: 1.2;
+  }
+
+  header {
+    .title-section {
+      img {
+        display: none;
+      }
+    }
+    #description {
+      padding: 0.5rem 0.8rem;
+    }
+  }
+
+  .layout {
+    max-width: 100%;
+
+    .message {
+      display: none;
+    }
+    #survey-form {
+      padding: 1rem 0.5rem;
+    }
+  }
+}

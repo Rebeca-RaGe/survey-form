@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This survey form is one of the Responsive Web Design Projects"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="title-section">
+        <img src="img/paw.png" alt="Petfriends logo" />
+        <h1 id="title">Petfriends Survey Form</h1>
+      </div>
+      <p id="description">
+        Thank you for taking time to help us to know more about you
+      </p>
+    </header>
+
+    <div class="layout">
+      <div class="flex-item message">
+        <div class="quote">
+          <q>
+            Until one has loved an animal, a part of one's soul remains
+            unawakened
+          </q>
+          <p>-Anatole France</p>
+        </div>
+
+        <img
+          class="align-self"
+          src="/img/cat-sobbing.jpg"
+          alt="Love for animals"
+        />
+      </div>
+
+      <form class="flex-item" id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter your age"
+            min="15"
+            max="80"
+            maxlength="2"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describe your regular visits to Petfriends?</p>
+          <select name="dropdown" id="dropdown">
+            <option disabled selected value>Select one option</option>
+            <option value="1">Prescriptions</option>
+            <option value="2">Exams</option>
+            <option value="3">Regular checking medical</option>
+            <option value="4">Emergency</option>
+            <option value="5">Variety of doctors</option>
+            <option value="6">Economic and reliable</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What kind of pet friend do you have?
+            <span>(Check all that apply)</span>
+          </p>
+          <div class="flex-container">
+            <label>
+              <input
+                type="checkbox"
+                name="kind-petfriend"
+                id="kind-petfriend"
+                value="cat"
+                class="checkbox"
+              />
+              Cat
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name=""
+                id="kind-petfriend"
+                value="dog"
+                class="checkbox"
+              />
+              Dog
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="kind-petfriend"
+                id="kind-petfriend"
+                value="mouse"
+                class="checkbox"
+              />
+              Mouse
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="kind-petfriend"
+                id="kind-petfriend"
+                value="bird"
+                class="checkbox"
+              />
+              Bird
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="kind-petfriend"
+                id="kind-petfriend"
+                value="fish"
+                class="checkbox"
+              />
+              Fish
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend Petfriends to a friend?</p>
+          <div class="flex-container">
+            <label>
+              <input
+                type="radio"
+                name="user-recommend"
+                id="user-recommend"
+                class="radio"
+                checked
+                value="definitely"
+              />
+              Definitely
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="user-recommend"
+                id="user-recommend"
+                class="radio"
+                value="maybe"
+              />
+              Maybe
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="user-recommend"
+                id="user-recommend"
+                class="radio"
+                value="not"
+              />
+              Not sure
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
+</html>

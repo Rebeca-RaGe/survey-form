@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #f1f1f1;
+  --purple: #6a197d;
+  --pink: #ffa5b0;
+  --grey: #e0dede;
+  --grey-dark: #333;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: var(--grey-dark);
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+header {
+  background: var(--purple);
+  min-height: 16vh;
+  text-align: center;
+  color: var(--grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .title-section img {
+  max-height: 4vh;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+header .title-section h1 {
+  font-family: "Yellowtail", cursive;
+  font-size: 3.3rem;
+}
+
+header p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.layout {
+  background: #f5f5f5;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.layout .flex-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 50%;
+}
+
+.layout .message {
+  background: var(--grey);
+  color: var(--purple);
+  font-family: "Yellowtail";
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.layout .message .quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.8rem;
+  opacity: 0.9;
+  padding: 2rem 0.5rem;
+}
+
+.layout .message .align-self {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  opacity: 0.7;
+  max-width: 45%;
+}
+
+.layout #survey-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0.6rem 2rem;
+  background: var(--pink);
+  color: #f8f8f8;
+}
+
+.layout #survey-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0.2rem;
+}
+
+.layout #survey-form .form-group .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.layout #survey-form .form-group label,
+.layout #survey-form .form-group p {
+  padding: 0.2rem;
+  line-height: 1.4;
+}
+
+.layout #survey-form .form-group input[type="text"],
+.layout #survey-form .form-group input[type="email"],
+.layout #survey-form .form-group input[type="number"],
+.layout #survey-form .form-group select,
+.layout #survey-form .form-group textarea,
+.layout #survey-form .form-group button {
+  border: 1px solid #ddd;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: var(--grey-dark);
+}
+
+.layout #survey-form .form-group input[type="text"]:focus,
+.layout #survey-form .form-group input[type="email"]:focus,
+.layout #survey-form .form-group input[type="number"]:focus,
+.layout #survey-form .form-group select:focus,
+.layout #survey-form .form-group textarea:focus,
+.layout #survey-form .form-group button:focus {
+  border: 2px solid var(--purple);
+  outline: 0;
+}
+
+.layout #survey-form .form-group .radio,
+.layout #survey-form .form-group .checkbox {
+  height: 0.8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+.layout #survey-form .form-group .checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: var(--white);
+  outline: 1px solid var(--grey);
+  border-radius: 2px;
+}
+
+.layout #survey-form .form-group .checkbox:hover {
+  background-color: #ccc;
+  outline: 2px solid var(--purple);
+}
+
+.layout #survey-form .form-group .checkbox:checked {
+  background: var(--purple);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.layout #survey-form .form-group .submit {
+  background: var(--purple);
+  color: var(--white);
+  border: 1px solid var(--grey-dark);
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow: auto;
+    line-height: 1.2;
+  }
+  header .title-section img {
+    display: none;
+  }
+  header #description {
+    padding: 0.5rem 0.8rem;
+  }
+  .layout {
+    max-width: 100%;
+  }
+  .layout .message {
+    display: none;
+  }
+  .layout #survey-form {
+    padding: 1rem 0.5rem;
+  }
+}
