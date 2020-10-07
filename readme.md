@@ -2,6 +2,10 @@
 
 This is a Survey Form as a part of the FreeCodeCamp projects
 
+![Survey form preview](https://github.com/Rebeca-RaGe/survey-form/blob/master/img/preview.jpeg)
+
+Would you like to see it? [Survey form](https://rebeca-rage.github.io/survey-form/)
+
 Technologies used:
 
 - HTML
